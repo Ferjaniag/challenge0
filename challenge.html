@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/uikit.min.css" />
+   
+    <title>Document</title>
+</head>
+<body>
+    <h2 style="text-align: center;"> Application de gestion de livre </h2>
+    <br>
+    <br>
+    <button id="afficherDiv" style="background-color: green; margin-left:10%"class="uk-button uk-button-primary">Ajouter livre</button>
+
+        
+    <br>
+    <table id="livres" class="uk-table uk-table-striped" style="width:80%; margin-left:10%">
+        <thead>
+            <tr>
+                <th>Titre</th>
+                <th>Auteur</th>
+                <th>Prix</th>
+                <th>Editer</th>
+                <th>Supprimer</th>
+            </tr>
+        </thead>
+        <tbody>
+           
+          
+        </tbody>
+    </table>
+
+    <br>
+
+    <div id="maDiv" class="uk-hidden" style="width:70% ;margin-left:10%">
+        <form class="uk-form-horizontal uk-margin-large" id="formLivre">
+
+            <div class="uk-margin">
+                <label class="uk-form-label" for="titre">Titre</label>
+                <div class="uk-form-controls">
+                    <input class="uk-input" id="titre" type="text" placeholder="Titre...">
+                </div>
+            </div>
+        
+            <div class="uk-margin">
+                <label class="uk-form-label" for="auteur">Auteur</label>
+                <div class="uk-form-controls">
+                    <input class="uk-input" id="auteur" type="text" placeholder="Auteur...">
+                </div>
+            </div>
+        
+            <div class="uk-margin">
+                <label class="uk-form-label" for="prix">Prix</label>
+                <div class="uk-form-controls">
+                    <input class="uk-input" id="prix" type="number" placeholder="Prix...">
+                </div>
+            </div>
+        
+            <div class="uk-margin">
+                <button class="uk-button uk-button-primary" type="submit" id="ajouterLivre">Ajouter</button>
+            </div>
+        </form>
+        
+    </div>
+
+<div id="maDiv2" class="uk-hidden" style="width:70% ;margin-left:10%">
+    <form class="uk-form-horizontal uk-margin-large" id="formEdition" >
+
+        <div class="uk-margin">
+            <label class="uk-form-label" for="titreEdition">Titre</label>
+            <div class="uk-form-controls">
+                <input class="uk-input" id="titreEdition" type="text" placeholder="Titre...">
+            </div>
+        </div>
+    
+        <div class="uk-margin">
+            <label class="uk-form-label" for="auteurEdition">Auteur</label>
+            <div class="uk-form-controls">
+                <input class="uk-input" id="auteurEdition" type="text" placeholder="Auteur...">
+            </div>
+        </div>
+    
+        <div class="uk-margin">
+            <label class="uk-form-label" for="prixEdition">Prix</label>
+            <div class="uk-form-controls">
+                <input class="uk-input" id="prixEdition" type="number" placeholder="Prix...">
+            </div>
+        </div>
+    
+        <div class="uk-margin">
+            <button class="uk-button uk-button-primary" type="submit" id="sauvegarderEdition">Sauvegarder</button>
+        </div>
+    </form>
+    
+</div>
+
+
+
+
+
+    <br>
+
+   
+    <script src="js/uikit.min.js"></script>
+    <script src="js/uikit-icons.min.js"></script>
+    <script src="challenge.js"></script>
+
+</body>
+</html>
